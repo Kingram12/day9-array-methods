@@ -234,3 +234,14 @@ const doWeHaveA5GPhone = (array) => {
 };
 
 // console.log(doWeHaveA5GPhone(chicagoWarehouse));
+
+const applyDiscountToPhone = (array, model, discount) => {
+    array.forEach((item) => {
+        if (item.name.includes(model)) {
+            item.price = (1 - discount) * item.price;
+        }
+    });
+};
+
+applyDiscountToPhone(detroitWarehouse, "iPhone", 0.1);
+console.log(detroitWarehouse);
