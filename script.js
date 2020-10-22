@@ -243,5 +243,5 @@ const applyDiscountToPhone = (array, model, discount) => {
     });
 };
 
-applyDiscountToPhone(detroitWarehouse, "iPhone", 0.1);
-console.log(detroitWarehouse);
+applyDiscountToPhone(chicagoWarehouse, "Galaxy", 0.5);
+console.log(chicagoWarehouse);
